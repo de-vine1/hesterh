@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;           
+            background: linear-gradient(to bottom, purple, rgb(48, 45, 190)); /* From deep blue to sky blue */
+            color: rgb(0, 0, 0);
+            margin: 0;               
+            padding: 0;  
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;   
+            font-style: italic;         
+        }
+
+        .c1 {
+            text-align: center;     
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:active {
+            transform: scale(0.9); /* Shrinks button on click */
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 100px;
+            color: red;
+            opacity: 0;
+            animation: fade-and-rise 1.5s forwards;
+        }
+
+        @keyframes fade-and-rise {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-150px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .animated-text {
+            font-size: 16px; /* Smaller font size for small screens */
+            line-height: 1; /* Reduces line height for smaller screens */
+            padding: 10px; /* Reduce padding */
+            border-radius: 5px; /* Smaller corner radius */    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <p>
+            To My queen <br>Ifeoluwa Christiana Deni<br>
+            Happy Anniversary to us, baby <br> 
+            Thanks for being mine <br>
+            I love you so much &#10084;&#65039;<br>
+            <button onclick="window.location.href='main.html'">Click me!</button>
+        </p>
+    </div>
+</body>
+</html>
